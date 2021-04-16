@@ -4,12 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.MainActivity">
+    tools:context=".view.activity.MainActivity">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/movies_recyclerview"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
 
     <LinearLayout
         android:id="@+id/no_movies_layout"
@@ -25,7 +26,8 @@
             android:layout_width="200dp"
             android:layout_height="200dp"
             android:layout_marginBottom="@dimen/_16sdp"
-            android:src="@drawable/ic_movie_teal_24dp"/>
+            android:src="@drawable/ic_movie_teal_24dp"
+            android:contentDescription="@string/image_film_icon" />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="match_parent"
@@ -33,7 +35,7 @@
             android:layout_gravity="center"
             android:textSize="16sp"
             android:textStyle="bold"
-            android:text="There are currently no movies in your watch list. Tap the button below to get started!"
+            android:text="@string/text_no_film"
             android:textAlignment="center" />
 
     </LinearLayout>
@@ -43,9 +45,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        android:onClick="goToAddMovieActivity"
+        android:layout_margin="@dimen/_16sdp"
         android:tint="@android:color/white"
-        app:srcCompat="@android:drawable/ic_input_add" />
+        app:srcCompat="@android:drawable/ic_input_add"
+        android:contentDescription="@string/add_film" />
 
 </FrameLayout>

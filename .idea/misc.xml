@@ -3,7 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Document/coding/Android Project/jetpack/MyMovieList02232021/app/src/main/res/drawable-v24/ic_delete_white_24dp.xml" value="0.2604166666666667" />
         <entry key="..\:/Document/coding/Android Project/jetpack/MyMovieList02232021/app/src/main/res/layout/activity_main.xml" value="0.21195652173913043" />
+        <entry key="..\:/Document/coding/Android Project/jetpack/MyMovieList02232021/app/src/main/res/layout/item_movie_details.xml" value="0.1" />
+        <entry key="..\:/Document/coding/Android Project/jetpack/MyMovieList02232021/app/src/main/res/layout/item_movie_main.xml" value="0.20108695652173914" />
       </map>
     </option>
   </component>
