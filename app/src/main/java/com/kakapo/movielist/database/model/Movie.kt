@@ -39,6 +39,7 @@ data class Movie(
     var watched: Boolean = false
 ){
     fun getReleaseYearFormatDate(): String? {
-        return releaseDate?.split("-")?.get(0)
+        val date: String? = releaseDate
+        return date?.split("-")?.get(0)
     }
 }
