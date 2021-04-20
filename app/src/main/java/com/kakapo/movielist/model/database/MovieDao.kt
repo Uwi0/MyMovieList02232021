@@ -1,7 +1,8 @@
-package com.kakapo.movielist.database.model
+package com.kakapo.movielist.model.database
 
 import androidx.room.*
 import androidx.room.OnConflictStrategy.REPLACE
+import com.kakapo.movielist.model.entities.Movie
 import io.reactivex.rxjava3.core.Observable
 
 @Dao
@@ -11,14 +12,14 @@ interface MovieDao {
     val all: Observable<List<Movie>>
 
     @Insert(onConflict = REPLACE)
-    fun insert(movie: Movie)
+    suspend fun insert(movie: Movie)
 
     @Query("DELETE FROM movie_table WHERE id = :id")
-    fun deleted(id: Int)
+    suspend fun deleted(id: Int)
 
     @Delete
-    fun deleteAll()
+    suspend fun deleteAll()
 
     @Update
-    fun update(movie: Movie)
+    suspend fun update(movie: Movie)
 }

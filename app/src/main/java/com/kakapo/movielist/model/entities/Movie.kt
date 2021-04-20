@@ -1,4 +1,4 @@
-package com.kakapo.movielist.database.model
+package com.kakapo.movielist.model.entities
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey

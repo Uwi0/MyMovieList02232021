@@ -4,7 +4,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
-import com.kakapo.movielist.database.model.Movie
+import com.kakapo.movielist.model.entities.Movie
 import com.kakapo.movielist.databinding.ItemMovieMainBinding
 
 class MovieListAdapter(
